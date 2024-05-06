@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 import asyncio
 from 3-tasks import task_wait_random
 

@@ -7,6 +7,7 @@ import random
 # Assuming wait_random is defined in another file as before
 from your_module_name import wait_random
 
+
 async def wait_n(n: int, max_delay: int) -> list:
     """Spawn wait_random n times with the specified max_delay."""
     tasks = [asyncio.create_task(wait_random(max_delay)) for _ in range(n)]

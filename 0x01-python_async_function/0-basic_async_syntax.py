@@ -4,6 +4,7 @@
 import asyncio
 import random
 
+
 async def wait_random(max_delay: int = 10) -> float:
     """Wait for a random delay and return the delay time."""
     delay = random.uniform(0, max_delay)
@@ -14,10 +15,9 @@ async def wait_random(max_delay: int = 10) -> float:
 
 if __name__ == "__main__":
     # Import the coroutine
-    from your_module_name import wait_random
+    from ./0x01-python_async_function import wait_random
 
     # Run the coroutine and print the result
     print(asyncio.run(wait_random()))
     print(asyncio.run(wait_random(5)))
     print(asyncio.run(wait_random(15)))
-  

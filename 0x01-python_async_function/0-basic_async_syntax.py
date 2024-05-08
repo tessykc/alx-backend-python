@@ -10,13 +10,9 @@ async def wait_random(max_delay: int = 10) -> float:
     await asyncio.sleep(delay)
     return delay
 
-# If you want to use this coroutine in your 0-main.py, you can do so like this:
 
-if __name__ == "__main__":
-    # Import the coroutine
-    from ./0x01-python_async_function import wait_random
-
+async def main():
     # Run the coroutine and print the result
-    print(asyncio.run(wait_random()))
-    print(asyncio.run(wait_random(5)))
-    print(asyncio.run(wait_random(15)))
+    print(await wait_random())
+    print(await wait_random(5))
+    print(await wait_random(15))

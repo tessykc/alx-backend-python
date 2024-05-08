@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 
-
 import asyncio
 import random
 
-# Assuming wait_random is defined in another file as before
-from your_module_name import wait_random
+from ./0x01-python_async_function import wait_random
 
 
 async def wait_n(n: int, max_delay: int) -> list:
@@ -15,8 +13,9 @@ async def wait_n(n: int, max_delay: int) -> list:
     # Extract the results from completed tasks and return them
     return [task.result() for task in completed]
 
-# Example usage in your 1-main.py:
+
+# Example 
 if __name__ == "__main__":
-    print(asyncio.run(wait_n(5, 5)))
-    print(asyncio.run(wait_n(10, 7)))
-    print(asyncio.run(wait_n(10, 0)))
+    asyncio.run(wait_n(5, 5))
+    asyncio.run(wait_n(10, 7))
+    asyncio.run(wait_n(10, 0))

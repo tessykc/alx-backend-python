@@ -7,7 +7,8 @@ from 0x01_python_async_function import wait_random
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
-    """Spawn wait_random n times with the specified max_delay.
+    """
+    Spawn wait_random n times with the specified max_delay.
 
     Args:
         n (int): Number of times to spawn wait_random.

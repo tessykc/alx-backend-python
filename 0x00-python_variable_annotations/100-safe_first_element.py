@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Safe first element"""
 
 from typing import Sequence, Any, Union
 

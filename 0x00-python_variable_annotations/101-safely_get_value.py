@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Safely get value"""
 
 from typing import TypeVar, Mapping, Any, Union
 

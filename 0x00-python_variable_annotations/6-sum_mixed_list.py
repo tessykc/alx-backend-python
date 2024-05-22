@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Sum Mixed List"""
 
 
 from typing import List, Union

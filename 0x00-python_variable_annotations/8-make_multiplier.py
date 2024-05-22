@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Make Multiplier"""
 
 from typing import Callable
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Concurrent coroutine"""
 
 import asyncio
 from typing import List
@@ -23,6 +24,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
 
 
 if __name__ == "__main__":
+    """Name == Main"""
     asyncio.run(wait_n(5, 5))
     asyncio.run(wait_n(10, 7))
     asyncio.run(wait_n(10, 0))

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+"""Measure runtime"""
 
 import asyncio
 import time
